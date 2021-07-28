@@ -22,10 +22,10 @@ spec:
     port: 9898
     # Istio gateways (optional)
     gateways:
-    - istio-system/public-gateway
+      - istio-system/public-gateway
     # Istio virtual service host names (optional)
     hosts:
-    - "*"
+      - "*"
   analysis:
     # schedule interval (default 60s)
     interval: 15s
@@ -56,7 +56,7 @@ spec:
           name: latency
           namespace: istio-system
         thresholdRange:
-          max: 500
+          max: "700"
         interval: 30s
     # tests
     webhooks:
