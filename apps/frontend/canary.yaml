@@ -56,7 +56,7 @@ spec:
           name: latency
           namespace: istio-system
         thresholdRange:
-          max: "700"
+          max: 700
         interval: 30s
     # tests
     webhooks:
